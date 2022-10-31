@@ -12,8 +12,8 @@ spec:
     helm:
       valueFiles:
       - values-prod.yaml
-    path: exercises/manifests 
-    repoURL: https://github.com/udacity/nd064_course_1 
+    path: /helm
+    repoURL: https://github.com/AmrElboridy/TechTrends_2.-Cloud-Native-Fundamentals
     targetRevision: HEAD
   # Sync policy
   syncPolicy: {}
