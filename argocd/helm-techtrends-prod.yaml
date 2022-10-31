@@ -12,7 +12,7 @@ spec:
     helm:
       valueFiles:
       - values-prod.yaml
-    path: helm/
+    path: ./helm
     repoURL: https://github.com/AmrElboridy/TechTrends_2.-Cloud-Native-Fundamentals
     targetRevision: HEAD
   # Sync policy
