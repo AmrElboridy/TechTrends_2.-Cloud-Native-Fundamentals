@@ -1,13 +1,16 @@
 import sqlite3
-
+import logging
 from flask import Flask, jsonify, json, render_template, request, url_for, redirect, flash
 from werkzeug.exceptions import abort
+count = 0
 
 # Function to get a database connection.
 # This function connects to database with the name `database.db`
 def get_db_connection():
+    global count
     connection = sqlite3.connect('database.db')
     connection.row_factory = sqlite3.Row
+    count += 1
     return connection
 
 # Function to get a post using its ID
@@ -65,6 +68,30 @@ def create():
 
     return render_template('create.html')
 
+#Define the metrics endpoint
+@app.route('/metrics')
+def metrics():
+    response = app.response_class(
+        response=json.dumps({"data": {
+                            "db_connection_count": count, "post_count": len(get_db_connection().execute('SELECT * FROM posts').fetchall())}}),
+        status=200,
+        mimetype='application/json'
+    )
+    app.logger.info('Metrics successfully requested')
+    return response
+
+# Define the health status
+@app.route('/healthz')
+def status():
+    response = app.response_class(
+        response = json.dumps({"result":"OK - healthy"}),
+        status = 200,
+        mimetype = 'application/json'
+    )
+    app.logger.info('Healthz successfully requested')
+    return response
+
 # start the application on port 3111
 if __name__ == "__main__":
+   logging.basicConfig(filename='app.log', level=logging.DEBUG)
    app.run(host='0.0.0.0', port='3111')
