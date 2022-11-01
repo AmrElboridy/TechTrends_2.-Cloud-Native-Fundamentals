@@ -22,18 +22,12 @@ resources:
     cpu: 500m
     memory: 128Mi
 
-containerPorts:
-  http: 3111
-  https: 3111
+containerPorts: 3111
 
 livenessProbe:
-  enabled: true
-  httpGet:
     path: /healthz
     port: 3111
 
 readinessProbe:
-  enabled: true
-  httpGet:
     path: /healthz
     port: 3111
