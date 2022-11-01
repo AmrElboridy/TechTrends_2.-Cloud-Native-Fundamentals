@@ -6,17 +6,23 @@ metadata:
     app: techtrendsLabel
   name: techtrends
   namespace: {{ .Values.namespace.name }}
+## Define the desired configuration for the Deployment resource.
 spec:
+  ## Set the number of replicas.
   replicas:  {{ .Values.replicaCount }}
+  ## Identify the pods managed by this Deployment using the following selectors.
   selector:
     matchLabels:
       app: techtrendsLabel
+  ## Set the configuration for the pods.
   template:
     metadata:
       labels:
         app: techtrendsLabel
+      ## Define the desired state of the pod configuration.
     spec:
       containers:
+      ## Set the image to be executed inside the container and image pull policy
       - image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         name: techtrends
