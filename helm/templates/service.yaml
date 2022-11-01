@@ -5,7 +5,7 @@ kind: Service
 ## Set the parameters that make the object identifiable, such as its name, namespace, and labels.
 metadata:
   labels:
-    app: techtrends
+    app: techtrendsLabel
   name: techtrends
   namespace: {{ .Values.namespace.name }} 
 ## Define the desired configuration for the Service resource.
@@ -14,9 +14,6 @@ spec:
   ports:
   - port: {{ .Values.service.port }} 
     protocol: TCP
-    targetPort: {{ .Values.service.port }} 
-  ## Identify the pods managed by this Service using the following selectors.
-  selector:
-    app: techtrendsLabel
+    targetPort: {{ .Values.service.targetPort }} 
   ## Define the Service type, here set to ClusterIP.
   type: {{ .Values.service.type }}

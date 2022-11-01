@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  annotations:
   name: techtrends
   namespace: {{ .Values.namespace.name }} 
 ## Define the desired configuration for the Deployment resource.
@@ -49,4 +48,4 @@ spec:
           limits:
        #     memory: "128Mi"
             cpu: "500m"
-#{{ toYaml .Values.resources | indent 12 }}
+{{ toYaml .Values.resources | indent 12 }}
