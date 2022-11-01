@@ -1,5 +1,6 @@
 import sqlite3
 import logging
+import sys
 from flask import Flask, jsonify, json, render_template, request, url_for, redirect, flash
 from werkzeug.exceptions import abort
 count = 0
@@ -92,6 +93,13 @@ def status():
     return response
 
 # start the application on port 3111
+ # set logger to handle STDOUT and STDERR 
+
+ # format output
+ #format_output = # formating output here
 if __name__ == "__main__":
-   logging.basicConfig(filename='app.log', level=logging.DEBUG)
+   stdout_handler = logging.StreamHandler(stream=sys.stdout)
+   stderr_handler = logging.StreamHandler(stream=sys.stderr)
+   handlers = [stderr_handler, stdout_handler]
+   logging.basicConfig(filename='app.log', level=logging.DEBUG, handlers=handlers)
    app.run(host='0.0.0.0', port='3111')

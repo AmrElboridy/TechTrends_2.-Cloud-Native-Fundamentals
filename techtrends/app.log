@@ -1,31 +1,4 @@
-INFO:werkzeug:192.168.122.1 - - [31/Oct/2022 13:24:37] "[37mGET / HTTP/1.1[0m" 200 -
 INFO:app:Metrics successfully requested
-INFO:werkzeug:192.168.122.1 - - [31/Oct/2022 13:24:42] "[37mGET /metrics HTTP/1.1[0m" 200 -
-INFO:app:Metrics successfully requested
-INFO:werkzeug:192.168.122.1 - - [31/Oct/2022 13:24:44] "[37mGET /metrics HTTP/1.1[0m" 200 -
-INFO:app:Metrics successfully requested
-INFO:werkzeug:192.168.122.1 - - [31/Oct/2022 13:24:45] "[37mGET /metrics HTTP/1.1[0m" 200 -
-INFO:app:Metrics successfully requested
-INFO:werkzeug:192.168.122.1 - - [31/Oct/2022 13:24:52] "[37mGET /metrics HTTP/1.1[0m" 200 -
-INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
-INFO:app:Metrics successfully requested
-INFO:werkzeug:192.168.122.1 - - [31/Oct/2022 13:26:52] "[37mGET /metrics HTTP/1.1[0m" 200 -
-INFO:app:Metrics successfully requested
-INFO:werkzeug:192.168.122.1 - - [31/Oct/2022 13:26:53] "[37mGET /metrics HTTP/1.1[0m" 200 -
-INFO:app:Metrics successfully requested
-INFO:werkzeug:192.168.122.1 - - [31/Oct/2022 13:26:54] "[37mGET /metrics HTTP/1.1[0m" 200 -
-INFO:app:Healthz successfully requested
-INFO:werkzeug:192.168.122.1 - - [31/Oct/2022 13:26:57] "[37mGET /healthz HTTP/1.1[0m" 200 -
-INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
-INFO:app:Healthz successfully requested
-INFO:werkzeug:192.168.122.1 - - [31/Oct/2022 13:27:56] "[37mGET /healthz HTTP/1.1[0m" 200 -
-INFO:app:Healthz successfully requested
-INFO:werkzeug:192.168.122.1 - - [31/Oct/2022 13:27:57] "[37mGET /healthz HTTP/1.1[0m" 200 -
-INFO:werkzeug:192.168.122.1 - - [31/Oct/2022 13:28:00] "[37mGET /1 HTTP/1.1[0m" 200 -
-INFO:werkzeug:192.168.122.1 - - [31/Oct/2022 13:28:03] "[37mGET /about HTTP/1.1[0m" 200 -
-INFO:app:Metrics successfully requested
-INFO:werkzeug:192.168.122.1 - - [31/Oct/2022 13:28:06] "[37mGET /metrics HTTP/1.1[0m" 200 -
-INFO:app:Metrics successfully requested
-INFO:werkzeug:192.168.122.1 - - [31/Oct/2022 13:28:08] "[37mGET /metrics HTTP/1.1[0m" 200 -
-INFO:app:Healthz successfully requested
-INFO:werkzeug:192.168.122.1 - - [31/Oct/2022 13:28:12] "[37mGET /healthz HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 14:59:29] "[37mGET /metrics HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 14:59:32] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 14:59:32] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
