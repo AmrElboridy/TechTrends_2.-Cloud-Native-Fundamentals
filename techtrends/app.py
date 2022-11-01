@@ -6,8 +6,8 @@ from werkzeug.exceptions import abort
 count = 0
 
 # Function to get a database connection.
-# This function connects to database with the name `database.db`
 def get_db_connection():
+    """This function connects to database with the name database.db."""
     global count
     connection = sqlite3.connect('database.db')
     connection.row_factory = sqlite3.Row
@@ -25,7 +25,7 @@ def get_post(post_id):
 # Define the Flask application
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your secret key'
-
+app.config['count'] = 0
 # Define the main route of the web application 
 @app.route('/')
 def index():

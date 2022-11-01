@@ -2,3 +2,187 @@ INFO:app:Metrics successfully requested
 INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 14:59:29] "[37mGET /metrics HTTP/1.1[0m" 200 -
 INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 14:59:32] "[37mGET / HTTP/1.1[0m" 200 -
 INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 14:59:32] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 33, in index
+    connection = get_db_connection()
+  File "app.py", line 13, in get_db_connection
+    count += 1
+NameError: global name 'count' is not defined
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 15:05:48] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 33, in index
+    connection = get_db_connection()
+  File "app.py", line 13, in get_db_connection
+    count += 1
+NameError: global name 'count' is not defined
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 15:05:52] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 33, in index
+    connection = get_db_connection()
+  File "app.py", line 19, in get_db_connection
+    count += 1
+NameError: global name 'count' is not defined
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 15:06:31] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 33, in index
+    connection = get_db_connection()
+  File "app.py", line 19, in get_db_connection
+    count += 1
+NameError: global name 'count' is not defined
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 15:06:32] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 78, in metrics
+    "db_connection_count": count, "post_count": len(get_db_connection().execute('SELECT * FROM posts').fetchall())}}),
+NameError: global name 'count' is not defined
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 15:06:35] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 78, in metrics
+    "db_connection_count": count, "post_count": len(get_db_connection().execute('SELECT * FROM posts').fetchall())}}),
+NameError: global name 'count' is not defined
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 15:06:35] "[35m[1mGET /metrics HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:app:Metrics successfully requested
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 15:07:25] "[37mGET /metrics HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 15:07:30] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 15:07:32] "[37mGET /1 HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 31, in index
+    connection = get_db_connection()
+  File "app.py", line 13, in get_db_connection
+    count += 1
+NameError: global name 'count' is not defined
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 15:09:47] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 31, in index
+    def index():
+  File "app.py", line 13, in get_db_connection
+    connection.row_factory = sqlite3.Row
+NameError: global name 'count' is not defined
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 15:09:54] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 31, in index
+    def index():
+  File "app.py", line 13, in get_db_connection
+    connection.row_factory = sqlite3.Row
+NameError: global name 'count' is not defined
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 15:09:55] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 15:10:01] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 15:10:02] "[37mGET /1 HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 15:10:05] "[37mGET /create HTTP/1.1[0m" 200 -
+INFO:app:Metrics successfully requested
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 15:10:21] "[37mGET /metrics HTTP/1.1[0m" 200 -
+INFO:app:Metrics successfully requested
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 15:10:22] "[37mGET /metrics HTTP/1.1[0m" 200 -
+INFO:app:Metrics successfully requested
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 15:10:23] "[37mGET /metrics HTTP/1.1[0m" 200 -
+INFO:app:Metrics successfully requested
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 15:10:23] "[37mGET /metrics HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:app:Metrics successfully requested
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 15:16:18] "[37mGET /metrics HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 15:16:21] "[37mGET /create HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 15:16:22] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:192.168.122.1 - - [01/Nov/2022 15:16:24] "[37mGET /about HTTP/1.1[0m" 200 -
