@@ -10,10 +10,12 @@ metadata:
   namespace: {{ .Values.namespace.name }} 
 ## Define the desired configuration for the Service resource.
 spec:
+  selector:
+    app: techtrendsLabel
   ## Define the ports that the service should serve on. 
   ports:
   - port: {{ .Values.service.port }} 
-    protocol: TCP
+    protocol: {{ .Values.service.protocol }}
     targetPort: {{ .Values.service.targetPort }} 
   ## Define the Service type, here set to ClusterIP.
   type: {{ .Values.service.type }}
